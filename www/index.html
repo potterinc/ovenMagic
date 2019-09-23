@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>OvenMagic Bakery</title>
+	<meta charset="utf-8" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="msapplication-tap-highlight" content="no" />
+	<meta name="viewport"
+		content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+	<!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+	<meta http-equiv="Content-Security-Policy"
+		content="default-src * 'unsafe-inline' gap:; style-src 'self' 'unsafe-inline'; media-src *" />
+	<!-- Good default declaration:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+        * Enable inline JS: add 'unsafe-inline' to default-src
+        * Enable eval(): add 'unsafe-eval' to default-src
+    * Create your own at http://cspisawesome.com
+    -->
+	<!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+
+	<link rel="stylesheet" type="text/css" href="css/oven.css" />
+
+	<!--font-awsome-css-->
+	<link rel="stylesheet" href="css/font-awesome.min.css" />
+	<!--bootstrap-->
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<!--custom css-->
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+	<!--component-css-->
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<!--script-->
+	<script src="js/modernizr.custom.js"></script>
+	<script src="js/bigSlide.js"></script>
+	<script>
+		$(document).ready(function () {
+			$(".menu-link").bigSlide();
+		});
+	</script>
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function ($) {
+			$(".scroll").click(function (event) {
+				event.preventDefault();
+				$("html,body").animate(
+					{ scrollTop: $(this.hash).offset().top },
+					900
+				);
+			});
+		});
+	</script>
+	<script src="js/simpleCart.min.js"></script>
+	<!--script-->
+	<link rel="stylesheet" type="text/css" href="css/easy-responsive-tabs.css " />
+	<script src="js/easyResponsiveTabs.js"></script>
+
+	<!--script-->
+	<link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+	<link
+		href="//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic"
+		rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<div class="body-back">
+		<div class="masthead pdng-stn1">
+			<div id="menu" class="panel" role="navigation">
+				<div class="wrap-content">
+					<div class="banner_search">
+						<form>
+							<input type="search" placeholder="Search..." required="" />
+							<input type="submit" value="" />
+						</form>
+					</div>
+					<div class="profile-menu text-center">
+						<img class="img-circle border-effect" src="images/pic3.png" alt="" />
+						<h3>John Leo</h3>
+						<p>Admin</p>
+						<div class="pro-menu">
+							<ul class="nav navbar-right">
+								<li>
+									<a class="scroll active" href="#home">Home</a>
+								</li>
+								<li>
+									<a class="scroll" href="#sales">Best Sales</a>
+								</li>
+								<li>
+									<a class="scroll" href="#latest">Latest Products</a>
+								</li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">View Product<span
+											class="caret"></span></a>
+									<ul class="dropdown-menu" role="menu">
+										<li>
+											<a href="#login" class="scroll" data-letters="Login">Login</a>
+										</li>
+										<li>
+											<a href="#sign" class="scroll" data-letters="Sign Up">Sign Up</a>
+										</li>
+									</ul>
+								</li>
+
+								<li>
+									<a class="scroll" href="#checkout">CheckOut</a>
+								</li>
+								<li>
+									<a class="scroll" href="#view">Get Shop</a>
+								</li>
+								<li>
+									<a class="scroll" href="#contact">Contact Us</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="phone-box wrap push" id="home">
+				<div class="menu-notify">
+					<div class="profile-left">
+						<a href="#menu" class="menu-link"><i class="fa fa-list-ul"></i></a>
+					</div>
+					<div class="Profile-mid">
+						<h5 class="pro-link">
+							<i class="fa fa-restaurant"></i>Oven Magic
+						</h5>
+					</div>
+					<div class="Profile-right">
+						<div class="cart box_1">
+							<a class="scroll" href="#checkout">
+								<h3>
+									<div class="total">
+										<span class="simpleCart_total"></span>
+										(<span id="simpleCart_quantity" class="simpleCart_quantity"></span>)
+									</div>
+									<i class="fa fa-shopping-cart"></i>
+								</h3>
+							</a>
+							<p>
+								<a href="javascript:;" class="simpleCart_empty"></a>
+							</p>
+							<!--								<p><a href="javascript:;" class="simpleCart_empty"><img src="images/empty.png" alt=""></a></p>-->
+							<div class="clearfix"></div>
+						</div>
+					</div>
+					<div class="clearfixfix"></div>
+				</div>
+
+				<!--		Agile UI Controller-->
+				<div id="agileControlViewer"></div>
+				<!--		//Agile UI Controller-->
+			</div>
+		</div>
+	</div>
+
+	<!--		Footer-->
+	<div class="footer">
+		<p>
+			<small>&copy; 2019 <a href="https://ovenmagic.com">Oven Magic</a>, All Rights Reserved</small>
+		</p>
+	</div>
+	<!--		/ Footer-->
+
+	<script type="text/javascript" src="cordova.js"></script>
+	<script type="text/javascript" src="js/oven.js"></script>
+	<script src="js/jquery.nicescroll.js"></script>
+	<script src="js/scripts.js"></script>
+	<script type="text/javascript">
+		app.initialize();
+	</script>
+</body>
+
+</html>
