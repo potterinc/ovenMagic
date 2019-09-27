@@ -42,7 +42,7 @@
 	</script>
 	<script type="text/javascript" src="js/move-top.js"></script>
 	<script type="text/javascript" src="js/easing.js"></script>
-	<script type="text/javascript">
+	<!-- <script type="text/javascript">
 		jQuery(document).ready(function ($) {
 			$(".scroll").click(function (event) {
 				event.preventDefault();
@@ -52,17 +52,17 @@
 				);
 			});
 		});
-	</script>
+	</script> -->
 	<script src="js/simpleCart.min.js"></script>
 	<!--script-->
 	<link rel="stylesheet" type="text/css" href="css/easy-responsive-tabs.css " />
 	<script src="js/easyResponsiveTabs.js"></script>
 
 	<!--script-->
-	<link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-	<link
+	<!-- <link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" /> -->
+	<!-- <link
 		href="//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic"
-		rel="stylesheet" type="text/css" />
+		rel="stylesheet" type="text/css" /> -->
 </head>
 
 <body>
@@ -79,39 +79,26 @@
 					<div class="profile-menu text-center">
 						<img class="img-circle border-effect" src="images/pic3.png" alt="" />
 						<h3>John Leo</h3>
-						<p>Admin</p>
+						<p>Engineer</p>
 						<div class="pro-menu">
 							<ul class="nav navbar-right">
 								<li>
-									<a class="scroll active" href="#home">Home</a>
+									<a class="scroll active" id="dashboard" href="javascript:void(0)">Dashboard</a>
 								</li>
 								<li>
-									<a class="scroll" href="#sales">Best Sales</a>
+									<a class="scroll" id="orders" href="javascript:void(0)">My Orders</a>
 								</li>
 								<li>
-									<a class="scroll" href="#latest">Latest Products</a>
-								</li>
-								<li class="dropdown">
-									<a href="#" class="dropdown-toggle" data-toggle="dropdown">View Product<span
-											class="caret"></span></a>
-									<ul class="dropdown-menu" role="menu">
-										<li>
-											<a href="#login" class="scroll" data-letters="Login">Login</a>
-										</li>
-										<li>
-											<a href="#sign" class="scroll" data-letters="Sign Up">Sign Up</a>
-										</li>
-									</ul>
-								</li>
-
-								<li>
-									<a class="scroll" href="#checkout">CheckOut</a>
+									<a class="scroll" id="bakery" href="javascript:void(0)">Bakery</a>
 								</li>
 								<li>
-									<a class="scroll" href="#view">Get Shop</a>
+									<a class="scroll" id="wallet" href="javascript:void(0)">Wallet</a>
 								</li>
 								<li>
-									<a class="scroll" href="#contact">Contact Us</a>
+									<a class="scroll" id="contact" href="javascript:void(0)">Contact Us</a>
+								</li>
+								<li>
+									<a class="scroll" id="logout" href="javascript:void(0)">Logout</a>
 								</li>
 							</ul>
 						</div>
@@ -121,16 +108,14 @@
 			<div class="phone-box wrap push" id="home">
 				<div class="menu-notify">
 					<div class="profile-left">
-						<a href="#menu" class="menu-link"><i class="fa fa-list-ul"></i></a>
+						<a href="#menu" class="menu-link text-info"><i class="fa fa-list-ul"></i></a>
 					</div>
 					<div class="Profile-mid">
-						<h5 class="pro-link">
-							<i class="fa fa-restaurant"></i>Oven Magic
-						</h5>
+						<img src="images/oven-magic-branding-logo.png" alt="oven-magic-branded-logo" width="100%" />
 					</div>
 					<div class="Profile-right">
 						<div class="cart box_1">
-							<a class="scroll" href="#checkout">
+							<a class="scroll" id="checkout" href="javascript:void(0)">
 								<h3>
 									<div class="total">
 										<span class="simpleCart_total"></span>
@@ -159,13 +144,14 @@
 	<!--		Footer-->
 	<div class="footer">
 		<p>
-			<small>&copy; 2019 <a href="https://ovenmagic.com">Oven Magic</a>, All Rights Reserved</small>
+			<small>&copy; 2019 <a href="https://ovenmagic.com" target="_blank">Oven Magic</a>, All Rights
+				Reserved</small>
 		</p>
 	</div>
 	<!--		/ Footer-->
 
-	<script type="text/javascript" src="cordova.js"></script>
-	<script type="text/javascript" src="js/oven.js"></script>
+	<script type="text/javascript" src="js/cordova.js"></script>
+	<script type="text/javascript" src="js/appEventHandler.js"></script>
 	<script src="js/jquery.nicescroll.js"></script>
 	<script src="js/scripts.js"></script>
 	<script type="text/javascript">
