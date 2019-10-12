@@ -32,6 +32,33 @@ h1,h2,h3,h4,h5,h6{
 	font-family: 'Source Sans Pro';
 	src:url(../fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf) format('truetype');
 }
+
+/* Wallet */
+#nav-tab-list li{
+    display: inline;
+    list-style: none;
+    font-weight: bolder;
+}
+#nav-tab-list a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+#nav-tab-list li:hover{
+    border-bottom: 2px solid #00a0dc;
+}
+.tab-list li{
+    display: block;
+    list-style: none;
+    text-transform: capitalize;
+    border-bottom: 1px solid #f2f2f2;
+}
+.tab-list a {
+    display: inline-block;
+    text-decoration: none;
+    margin: 10px 20px;
+}
+/* //Wallet */
 .side-nav.leftside-navigation {
     top: 64px;
     overflow: hidden;
