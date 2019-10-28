@@ -19,6 +19,7 @@ body{
 	margin:0;
 	background-size:cover;
     padding:0;
+    scroll-behavior: smooth;
 }
 body p{
   font-family: 'Open Sans', sans-serif;
@@ -39,6 +40,9 @@ h1,h2,h3,h4,h5,h6{
     list-style: none;
     font-weight: bolder;
 }
+.oven-card {
+    height: 150px !important;
+}
 #nav-tab-list a {
     display: inline-block;
     text-decoration: none;
@@ -56,7 +60,7 @@ h1,h2,h3,h4,h5,h6{
 .tab-list a {
     display: inline-block;
     text-decoration: none;
-    margin: 10px 20px;
+    margin: 15px 0;
 }
 /* //Wallet */
 .side-nav.leftside-navigation {
@@ -103,6 +107,7 @@ h1.fit_tittle{
 .fit_main{
 	padding:50px 0;
 }
+
 .footer p{
 	color:#fff;
 	font-size: 15px;
