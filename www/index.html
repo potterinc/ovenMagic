@@ -21,6 +21,8 @@
     -->
 	<!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
 
+	<!-- W3 CSS framework -->
+	<link rel="stylesheet" type="text/css" href="css/w3.css" />
 	<link rel="stylesheet" type="text/css" href="css/oven.css" />
 
 	<!--font-awsome-css-->
@@ -135,54 +137,70 @@
 				<!--		Agile UI Controller-->
 				<div id="agileControlViewr">
 					<div id="dashboard">
-						<h4 class="text-center text-success">Default Card</h4>
+						<hr />
 						<div class="container">
-							<div class="jumbotron mt-5">
-								<div class="mt-5 row">
-									<h4><i class="fa fa-usd"></i> 45554.34</h4>
-									<h2 class="mt-5">
+							<div class="w3-round w3-card-4 w3-amber oven-card">
+								<div class="w3-padding-medium">
+									<span class="w3-margin w3-xlarge"><i class="fa fa-usd"></i> 45,554.<span
+											class="w3-small">34</span></span>
+									<div class="w3-large w3-center w3-padding-top w3-margin-top">
 										<div class="col-xs-3">
-											<span class="py-5 my-5">****</span>
-										</div>
-										<div class="col-xs-3">
-											<span class="py-5 my-5">****</span>
+											<span>****</span>
 										</div>
 										<div class="col-xs-3">
-											<span class="py-5 my-5">****</span>
+											<span>****</span>
 										</div>
 										<div class="col-xs-3">
-											<span class="py-5 my-5">9857</span>
+											<span>****</span>
 										</div>
-									</h2>
-									<div class="col-xs-12">
-										<div class="col-xs-6">
-											<span id="expiry-date">11/23</span>
+										<div class="col-xs-3">
+											<span>9857</span>
 										</div>
-										<div class="col-xs-6">
-											<span class="right"><i class="fa fa-credit-card"></i> VISA</span>
-										</div>
+									</div>
+								</div>
+								<div class="w3-margin-top w3-padding-medium">
+									<div class="col-xs-6">
+										<span id="expiry-date" class="w3-small">11/23</span>
+									</div>
+									<div class="col-xs-6">
+										<span class="w3-small"><i class="fa fa-credit-card"></i> oven card</span>
 									</div>
 								</div>
 							</div>
 							<hr />
 							<nav class="nav-tab-wrapper text-center">
 								<ul id="nav-tab-list">
-									<li class="col-xs-6 text-capitalize"><a href="javascript:void(0)" id="tab-list-actions">Actions</a></li>
-									<li class="col-xs-6 text-capitalize"><a href="javascript:void(0)" id="tab-list-transact">Transations</a></li>
+									<li class="col-xs-6 text-capitalize"><a href="javascript:void(0)"
+											id="tab-list-actions">Actions</a></li>
+									<li class="col-xs-6 text-capitalize"><a href="javascript:void(0)"
+											id="tab-list-purchase">Purchases</a></li>
 								</ul>
 							</nav>
 							<div class="clearfix"></div>
 
-							<div class="tab-list w3-animate-fade-in w3-animate-left">
+							<!-- Actions -->
+							<div class="tab-list w3-animate-left">
 								<ul>
-									<li><a href="#"><i class="fa fa-plus"></i> Top up</a></li>
-									<li><a href="#"><i class="fa fa-refresh text-success"></i> Pay & Transfer</a></li>
-									<li><a href="#"><i class="fa fa-credit-card"></i> Credit cards</a></li>
-									<li><a href="#"><i class="fa fa-exclamation text-warning"></i> Limits</a></a></li>
-									<li><a href="#"><i class="fa fa-money"></i> Coupons</a></a></li>
-									<li><a href="#"><i class="fa fa-times text-danger"></i> Delete</a></a></li>
+									<li><a href="#"><i class="fa fa-plus w3-large"></i> Top up</a></li>
+									<li><a href="#"><i class="fa fa-money w3-large"></i> Pay & Order</a></li>
+									<li><a href="#"><i class="fa fa-credit-card w3-large"></i> My Cards</a></li>
+									<li><a href="#"><i class="fa fa-cog fa-spin w3-large"></i> Account Settings</a></a>
+									</li>
 								</ul>
 							</div>
+							<!-- //Actions -->
+							<!-- Purchases -->
+							<div class="tab-list w3-animate-left">
+								<ul>
+									<li><a href="#"><i class="fa fa-plus w3-large"></i> Bread</a></li>
+									<li><a href="#"><i class="fa fa-money w3-large"></i>Sardine</a></li>
+									<li><a href="#"><i class="fa fa-credit-card w3-large"></i> My Cards</a></li>
+									<li><a href="#"><i class="fa fa-cog fa-spin w3-large"></i> Account Settings</a></a>
+									</li>
+								</ul>
+							</div>
+
+
 						</div>
 
 					</div>
